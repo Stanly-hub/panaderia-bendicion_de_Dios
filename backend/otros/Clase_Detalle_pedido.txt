@@ -1,0 +1,28 @@
+📦 [ PEDIDO MASTER ] (El Ticket General)
+ ══════════════════════════════════════════
+ • ID: 1
+ • Panadero: Miguel
+ • Fecha: 2 de Octubre
+ • Turno: Madrugada
+ • Cantidad Total: 30
+ • Lista de Detalles (El Bolsillo Mágico):
+    │
+    ├── 📝 [ DetallePedido #1 ] 
+    │    ├── 🔗 pedido_id: 1  ──(@ManyToOne)──> (Apunta de regreso al Pedido de Miguel)
+    │    ├── 🍞 tipo_pan: Lido ──(@ManyToOne)──> (Apunta al Catálogo de Tipos de Pan)
+    │    └── 🔢 cantidad: 15
+    │
+    ├── 📝 [ DetallePedido #2 ] 
+    │    ├── 🔗 pedido_id: 1  ──(@ManyToOne)──> (Apunta de regreso al Pedido de Miguel)
+    │    ├── 🍞 tipo_pan: Redondo ──(@ManyToOne)──> (Apunta al Catálogo de Tipos de Pan)
+    │    └── 🔢 cantidad: 5
+    │
+    ├── 📝 [ DetallePedido #3 ] 
+    │    ├── 🔗 pedido_id: 1  ──(@ManyToOne)──> (Apunta de regreso al Pedido de Miguel)
+    │    ├── 🍞 tipo_pan: Polvoroso ──(@ManyToOne)──> (Apunta al Catálogo de Tipos de Pan)
+    │    └── 🔢 cantidad: 2
+    │
+    └── 📝 [ DetallePedido #4 ] 
+         ├── 🔗 pedido_id: 1  ──(@ManyToOne)──> (Apunta de regreso al Pedido de Miguel)
+         ├── 🍞 tipo_pan: Azucarado ──(@ManyToOne)──> (Apunta al Catálogo de Tipos de Pan)
+         └── 🔢 cantidad: 8
